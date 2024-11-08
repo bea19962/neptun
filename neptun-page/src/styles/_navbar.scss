@@ -1,0 +1,57 @@
+@use './_variables' as *;
+
+.navbar {
+  background-color: transparent;
+  backdrop-filter: blur(10px);
+  color: $text-color;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: $space-sm;
+  position: sticky;
+  top: 0;
+  z-index: 10; // Higher than video background
+
+  .navbar-links {
+    display: flex;
+    justify-content: space-around;
+    width: 30%;
+  }
+
+  .hamburger {
+    display: none;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+
+    .bar {
+      background-color: $border-color;
+      height: 3px;
+      width: 25px;
+    }
+  }
+}
+
+// Media Queries for Mobile
+@media (max-width: $breakpoint-tablet) {
+  .navbar-links {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    background-color: $primary-color;
+    z-index: 5;
+  }
+
+  .navbar-links.active {
+    display: flex;
+  }
+
+  .hamburger {
+    display: flex;
+  }
+}

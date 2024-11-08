@@ -1,0 +1,15 @@
+.video-background {
+ position: fixed;
+ top: 0;
+ left: 0;
+ width: 100vw;
+ height: 100vh;
+ z-index: -1; // Ensures it's behind other content
+ background-color: aqua;
+
+ video {
+   object-fit: cover; // This will make sure the video covers the entire area
+   width: 100%;
+   height: 100%;
+ }
+}

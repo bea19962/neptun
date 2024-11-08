@@ -1,0 +1,30 @@
+@use './_variables' as *;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+// Body Styling
+body {
+  font-family: $primary-font;
+  font-size: $font-size-base;
+  color: $text-color;
+  background-color: $background-color;
+  line-height: 1.6;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+// Section Styling
+section {
+  width: 100%;
+  min-height: 90vh;
+  margin-bottom: $space-lg;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}

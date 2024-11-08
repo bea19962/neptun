@@ -1,0 +1,42 @@
+[
+ {
+  "name": "Keivan Akbari",
+  "role": "Art & Design",
+  "image": "/images/john-doe.jpg",
+  "socials": {
+   "artstation": "...",
+   "website": "...",
+   "instagram": "..."
+  }
+ },
+ {
+  "name": "Fritz D. Thiel",
+  "role": "Art & Design",
+  "image": "/images/john-doe.jpg",
+  "socials": {
+   "artstation": "...",
+   "website": "...",
+   "instagram": "..."
+  }
+ },
+ {
+  "name": "Ilgin Oezcelik",
+  "role": "Art & Animation",
+  "image": "/images/john-doe.jpg",
+  "socials": {
+   "artstation": "...",
+   "website": "...",
+   "instagram": "..."
+  }
+ },
+ {
+  "name": "Jan Wichmann",
+  "role": "Programming",
+  "image": "/images/john-doe.jpg",
+  "socials": {
+   "artstation": "...",
+   "website": "...",
+   "instagram": "..."
+  }
+ }
+]

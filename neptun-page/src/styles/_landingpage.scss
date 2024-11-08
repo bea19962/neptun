@@ -1,0 +1,50 @@
+@use './_variables' as *;
+
+.landing-page {
+  position: relative;
+  height: 100vh;
+  padding-top: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+
+  .content {
+    position: relative;
+    text-align: center;
+    color: $text-color;
+    z-index: $z-index-content;
+
+    .text-left,
+    .text-right {
+      opacity: 0;
+      transform: translateX(-100%);
+      animation: slide-in 1.5s forwards;
+    }
+
+    .text-left {
+      animation-delay: 0.5s;
+    }
+
+    .text-right {
+      animation-delay: 1s;
+    }
+
+    h1 {
+      font-size: $font-size-XXL;
+      font-weight: $font-weight-bold;
+    }
+
+    p {
+      font-size: 1.5rem;
+    }
+  }
+}
+
+// Slide-in animation
+@keyframes slide-in {
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
