@@ -5,12 +5,8 @@
   text-align: center;
   position: relative;
   width: 100vw;
-
-  h2 {
-    font-size: $font-size-headings;
-    color: $accent-color;
-    margin-bottom: 30px;
-  }
+  padding: 0; 
+}
 
   .team-member-cards {
     display: flex;
@@ -31,7 +27,6 @@
       // scroll-snap-align: start;
     }
   }
-}
 
 @media (max-width: 768px) {
   .team-section {

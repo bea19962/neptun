@@ -1,0 +1,66 @@
+.project-card {
+ display: flex;
+ flex-direction: column;
+ width: 80vw;                 
+ height: 60vh;                
+ overflow: hidden;
+ position: relative;
+ margin: 2rem auto;
+ padding: 1.5rem;
+ background-color: rgba(255, 255, 255, 0.05);
+ border-radius: 8px;
+ box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+ color: #fff;
+
+ .project-media {
+   position: relative;
+   width: 100%;
+   height: 100%;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+
+   img {
+     position: absolute;
+     width: 100%;              // Ensures images fill the container
+     height: auto;
+     transition: transform 0.2s ease-out;  // Smooth transition for subtle parallax shifts
+   }
+
+   .project-logo {
+     z-index: 3;
+     transform: translateZ(0); // Logo is closest to the viewer
+   }
+
+   .project-background {
+     z-index: 2;
+     transform: translateZ(-10px); // Background layer for depth
+   }
+
+   .project-front {
+     z-index: 1;
+     transform: translateZ(-20px); // Front layer for even more depth
+   }
+ }
+
+ .project-info {
+   z-index: 4;
+   position: relative;
+   text-align: center;
+   padding: 1rem;
+   background-color: rgba(0, 0, 0, 0.6);
+   border-radius: 4px;
+   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+
+   h3 {
+     font-size: 2rem;
+     font-weight: bold;
+     margin-bottom: 0.5rem;
+   }
+
+   p {
+     font-size: 1.2rem;
+     line-height: 1.4;
+   }
+ }
+}

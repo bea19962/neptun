@@ -1,4 +1,4 @@
-@use './_variables' as *;
+@use "./_variables" as *;
 
 * {
   margin: 0;
@@ -21,10 +21,27 @@ body {
 // Section Styling
 section {
   width: 100%;
-  min-height: 90vh;
-  margin-bottom: $space-lg;
+  min-height: 95vh;
+  margin: 0;
+  padding: 0;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  gap: 0;
+
+  // &:not(#home) {
+  //   background-color: $black;
+  // }
+}
+ //chage to that again when done with the gsap animations
+section#projects,#team,#contact {
+  background-color: black; 
+}
+
+h2 {
+  font-size: $font-size-headings;
+  color: $accent-color;
+  margin-bottom: 30px;
+  text-transform: uppercase;
 }

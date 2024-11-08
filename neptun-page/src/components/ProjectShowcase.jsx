@@ -1,18 +1,19 @@
 import ProjectCard from './ProjectCard';
-
-const projects = [
-  { title: "Project 1", description: "Description of project 1", link: "#" },
-  { title: "Project 2", description: "Description of project 2", link: "#" },
-  { title: "Project 3", description: "Description of project 3", link: "#" },
-];
+import projects from "../projects.json";
+import "../styles/_projectsection.scss";
 
 const ProjectShowcase = () => {
   return (
     <section id="projects" className="projects">
-      <h2>Our Projects</h2>
+      <h2>Our Portfolio</h2>
       <div className="project-cards">
-        {projects.map((project, index) => (
-          <ProjectCard key={index} project={project} />
+        {projects.map((project) => (
+          <ProjectCard
+            key={project.id}
+            title={project.title}
+            description={project.description}
+            media={project.media}  // Pass media object to ProjectCard
+          />
         ))}
       </div>
     </section>

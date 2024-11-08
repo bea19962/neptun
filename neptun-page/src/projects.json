@@ -1,0 +1,22 @@
+[
+ {
+   "id": 1,
+   "title": "Kiosk Simulator",
+   "description": "Manage a traditional kiosk in the city metropolis of Cologne, Germany...",
+   "media": {
+     "logo": { "src": "/images/logo1.png", "depth": 1 },
+     "background": { "src": "/images/background1.jpg", "depth": 0.5 },
+     "front": { "src": "/images/front1.jpg", "depth": 0.25 }
+   }
+ },
+ {
+   "id": 2,
+   "title": "Breaking Barriers",
+   "description": "Transform Cologne into an inclusive city...",
+   "media": {
+     "logo": { "src": "/images/logo2.png", "depth": 1 },
+     "background": { "src": "/images/background2.jpg", "depth": 0.5 },
+     "front": { "src": "/images/front2.jpg", "depth": 0.25 }
+   }
+ }
+]
