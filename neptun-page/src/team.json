@@ -2,41 +2,37 @@
  {
   "name": "Keivan Akbari",
   "role": "Art & Design",
-  "image": "/images/john-doe.jpg",
+  "image": "../src/assets/Keivan.png",
   "socials": {
-   "artstation": "...",
-   "website": "...",
-   "instagram": "..."
+   "artstation": "https://k31v4n.artstation.com",
+   "website": ""
   }
  },
  {
   "name": "Fritz D. Thiel",
   "role": "Art & Design",
-  "image": "/images/john-doe.jpg",
+  "image": "../src/assets/Fritz.jpg",
   "socials": {
-   "artstation": "...",
-   "website": "...",
-   "instagram": "..."
+   "artstation": "https://fdt2.artstation.com",
+   "website": ""
   }
  },
  {
   "name": "Ilgin Oezcelik",
   "role": "Art & Animation",
-  "image": "/images/john-doe.jpg",
+  "image": "../src/assets/Iggy.jpg",
   "socials": {
-   "artstation": "...",
-   "website": "...",
-   "instagram": "..."
+   "artstation": "",
+   "website": "https://ilginoe.com"
   }
  },
  {
   "name": "Jan Wichmann",
   "role": "Programming",
-  "image": "/images/john-doe.jpg",
+  "image": "../src/assets/Jan.jpg",
   "socials": {
-   "artstation": "...",
-   "website": "...",
-   "instagram": "..."
+   "artstation": "",
+   "website": ""
   }
  }
 ]

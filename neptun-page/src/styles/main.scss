@@ -34,9 +34,11 @@ section {
   //   background-color: $black;
   // }
 }
- //chage to that again when done with the gsap animations
-section#projects,#team,#contact {
-  background-color: black; 
+//chage to that again when done with the gsap animations
+section#projects,
+#team,
+#contact {
+  background-color: black;
 }
 
 h2 {
@@ -44,4 +46,11 @@ h2 {
   color: $accent-color;
   margin-bottom: 30px;
   text-transform: uppercase;
+  letter-spacing: $letter-spacing-xs;
+}
+p {
+  font-size: $font-size-base;
+  color: $text-color;
+  line-height: $line-height-relaxed;
+  letter-spacing: $letter-spacing-md;
 }

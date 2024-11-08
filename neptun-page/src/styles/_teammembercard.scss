@@ -1,12 +1,12 @@
+@use "./_variables" as *;
+
 .team-member-card {
  display: flex;
  flex-direction: column;
  align-items: center;
- background-color: #fff;
- border: 1px solid #ddd;
- border-radius: 8px;
+ background-color: $primary-color;
+ border: 1px solid $muted-color;
  padding: 20px;
- box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
  width: 100%;
  max-width: 300px;
  margin: 15px;
@@ -15,13 +15,14 @@
  &:hover {
    transform: translateY(-5px);
    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+   border: 1.5px solid $accent-color;
  }
 
  &__image {
-   width: 100%;
+   width: 200px;
    height: 200px;
    object-fit: cover;
-   border-radius: 50%;
+  border-radius: 50%;
    margin-bottom: 20px;
  }
 
@@ -30,15 +31,15 @@
  }
 
  &__name {
-   font-size: 1.5rem;
-   font-weight: bold;
-   color: #333;
+   font-size: $font-size-m;
+   font-weight: $font-weight-bold;
+   color: $text-color;
    margin-bottom: 10px;
  }
 
  &__role {
    font-size: 1.2rem;
-   color: #777;
+   color: $muted-color;
    margin-bottom: 15px;
  }
 
