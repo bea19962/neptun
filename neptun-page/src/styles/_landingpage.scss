@@ -1,51 +1,51 @@
-@use './_variables' as *;
-
 .landing-page {
   position: relative;
   height: 100vh;
-  padding-top: 60px;
+  width: 100vw;
+  overflow: hidden;
+}
+
+#mask {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: -1;  // Behind the content
   display: flex;
   justify-content: center;
   align-items: center;
-  overflow: hidden;
-  
-
-  .content {
-    position: relative;
-    text-align: center;
-    color: $text-color;
-    z-index: $z-index-content;
-
-    .text-left,
-    .text-right {
-      opacity: 0;
-      transform: translateX(-100%);
-      animation: slide-in 1.5s forwards;
-    }
-
-    .text-left {
-      animation-delay: 0.5s;
-    }
-
-    .text-right {
-      animation-delay: 1s;
-    }
-
-    h1 {
-      font-size: $font-size-XXL;
-      font-weight: $font-weight-bold;
-    }
-
-    p {
-      font-size: 1.5rem;
-    }
-  }
 }
 
-// Slide-in animation
-@keyframes slide-in {
-  to {
-    opacity: 1;
-    transform: translateX(0);
-  }
+#mask img {
+  width: 10%;  // Make sure the image covers the screen initially
+  height: 10%;
+  object-fit: cover;
+}
+
+.content {
+  z-index: 2;  // Above the mask
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  height: 100vh;
+}
+
+.text-left, .text-right {
+  width: 100%;
+}
+
+h1, p {
+  color: white;
+}
+
+.spacer {
+  height: 100vh;
+}
+
+.BaseButton {
+  margin-top: 20px;
 }
