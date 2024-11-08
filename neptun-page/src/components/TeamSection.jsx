@@ -23,7 +23,7 @@ const TeamSection = () => {
         scrollTrigger: {
           trigger: ".team-section",
           start: "top 100%",
-          end: "top 5%",
+          end: "top 0%",
           toggleActions: "play reverse play reverse",
         },
       }
@@ -36,7 +36,7 @@ const TeamSection = () => {
 
   return (
     <div className="team-section">
-      <h2>Meet Our Team</h2>
+      <h2>The Team</h2>
       <p> After 6 years of successful collaboration in our studies, we founded our studio in January 2023. Aside of the production of our own products, we also offer fast and effective supervision or practical solutions for media-creation projects.</p>
       <div className="team-member-cards">
         {teamMembers.map((member) => (
