@@ -1,6 +1,7 @@
 import { useEffect } from "react";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
+import BaseButton from "./BaseButton";
 import "../styles/_landingpage.scss";
 
 gsap.registerPlugin(ScrollTrigger);
@@ -38,12 +39,10 @@ const LandingPage = () => {
           <h1>Neptun Interactive</h1>
         </div>
         <div className="text-right">
-          <h3>an Indie-Media developer team based in Cologne Germany</h3>
+          <h3>[ an Indie-Media developer team based in Cologne Germany ] </h3>
         </div> 
       </div>
-        <button className="scroll-btn" onClick={scrollToNextSection}>
-          Scroll Down
-        </button>
+      <BaseButton primary> a </BaseButton>
     </section>
   );
 };

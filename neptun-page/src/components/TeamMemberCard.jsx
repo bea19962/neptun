@@ -6,7 +6,7 @@ const TeamMemberCard = ({ name, role, image, socials }) => {
       <img src={image} alt={name} className="team-member-card__image" />
       <div className="team-member-card__info">
         <h3 className="team-member-card__name">{name}</h3>
-        <p className="team-member-card__role">{role}</p>
+        <p className="team-member-card__role">[ {role} ]</p>
         <div className="team-member-card__socials">
           {socials.artstation && socials.artstation !== "" && (
             <a href={socials.artstation} target="_blank" rel="noopener noreferrer">ArtStation</a>
