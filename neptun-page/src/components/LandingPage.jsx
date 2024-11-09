@@ -9,35 +9,41 @@ const LandingPage = () => {
   useEffect(() => {
     gsap.fromTo(
       ".text-left",
-      {
-        x: "-100%", // Start off-screen to the left
-      },
-      {
-        x: "0%", // End in the center
-        duration: 1,
-        ease: "power4.out",
-      }
+      { x: "-100%" },
+      { x: "0%", duration: 1, ease: "power4.out" }
     );
 
     gsap.fromTo(
       ".text-right",
+      { x: "100%" },
+      { x: "0%", duration: 1, ease: "power4.out" }
+    );
+
+    gsap.fromTo(
+      ".video-background",
+      { clipPath: "circle(-200px at 50% 50%)" },
       {
-        x: "100%", // Start off-screen to the right
-      },
-      {
-        x: "0%", // End in the center
-        duration: 1,
-        ease: "power4.out",
+        clipPath: "circle(100% at 50% 50%)",
+        duration: 3,
+        ease: "power4.inOut",
+        scrollTrigger: { trigger: ".video-background", scrub: 1 },
       }
     );
   }, []);
 
   const scrollToNextSection = () => {
-    document.getElementById("next-section").scrollIntoView({ behavior: "smooth" });
+    document
+      .getElementById("next-section")
+      .scrollIntoView({ behavior: "smooth" });
   };
 
   return (
     <section className="landing-page">
+      <div className="video-background">
+        <video autoPlay loop muted>
+          <source src="/skazkaprotebya.mp4" type="video/mp4" />
+        </video>
+      </div>
       <div className="content">
         <div className="text-left">
           <h1>Welcome to Neptun Interactive</h1>
