@@ -1,12 +1,13 @@
 import "../styles/_navlink.scss";
+import FlipLink from "./FlipLink";
 
 function NavLink({ section, label, activeSection, onLinkClick }) {
   return (
     <button
-      className={activeSection === section ? 'active' : ''}
+      className={`navlink-button ${activeSection === section ? "active" : ""}`}
       onClick={() => onLinkClick(section)}
     >
-      {label}
+      <FlipLink className="flip-link">{label}</FlipLink>
     </button>
   );
 }

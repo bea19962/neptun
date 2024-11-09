@@ -4,13 +4,12 @@ import { motion } from "framer-motion";
 const DURATION = 0.25;
 const STAGGER = 0.025;
 
-const FlipLink = ({ children, href }) => {
+const FlipLink = ({ children, className }) => {
   return (
-    <motion.a
+    <motion.div
       initial="initial"
       whileHover="hovered"
-      href={href}
-      className="motion-a"
+      className={`motion-a ${className || ""}`}
     >
       <div>
         {children.split("").map((letter, index) => (
@@ -56,7 +55,7 @@ const FlipLink = ({ children, href }) => {
           </motion.span>
         ))}
       </div>
-    </motion.a>
+    </motion.div>
   );
 };
 
