@@ -1,4 +1,16 @@
+import "../styles/_fliplink.scss";
 import { motion } from "framer-motion";
+
+export const RevealLinks = () => {
+  return (
+    <section className="silly-links">
+      <FlipLink href="#">Twitter</FlipLink>
+      <FlipLink href="#">Linkedin</FlipLink>
+      <FlipLink href="#">Facebook</FlipLink>
+      <FlipLink href="#">Instagram</FlipLink>
+    </section>
+  );
+};
 
 const DURATION = 0.25;
 const STAGGER = 0.025;
@@ -9,13 +21,10 @@ const FlipLink = ({ children, href }) => {
       initial="initial"
       whileHover="hovered"
       href={href}
-      className=""
-      style={{
-        lineHeight: 0.75,
-      }}
+      className="motion-a"
     >
       <div>
-        {children.split("").map((l, i) => (
+        {children.split("").map((letter, index) => (
           <motion.span
             variants={{
               initial: {
@@ -28,40 +37,36 @@ const FlipLink = ({ children, href }) => {
             transition={{
               duration: DURATION,
               ease: "easeInOut",
-              delay: STAGGER * i,
+              delay: STAGGER * index,
             }}
-            className="inline-block"
-            key={i}
+            key={index}
           >
-            {l}
+            {letter}
           </motion.span>
         ))}
       </div>
-      <div className="absolute inset-0">
-        {children.split("").map((l, i) => (
+      <div className="motion-div-second">
+        {children.split("").map((letter, index) => (
           <motion.span
             variants={{
               initial: {
                 y: "100%",
               },
               hovered: {
-                y: 0,
+                y: "0",
               },
             }}
             transition={{
               duration: DURATION,
               ease: "easeInOut",
-              delay: STAGGER * i,
+              delay: STAGGER * index,
             }}
-            className="inline-block"
-            key={i}
+            key={index}
           >
-            {l}
+            {letter}
           </motion.span>
         ))}
       </div>
     </motion.a>
   );
 };
-
-export default FlipLink;

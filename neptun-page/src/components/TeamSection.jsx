@@ -4,6 +4,7 @@ import ScrollTrigger from "gsap/ScrollTrigger";
 import TeamMemberCard from "./TeamMemberCard";
 import teamMembers from "../team.json";
 import "../styles/_teamsection.scss";
+import { RevealLinks } from "./FlipLink";
 
 const TeamSection = () => {
   useEffect(() => {
@@ -49,6 +50,7 @@ const TeamSection = () => {
           />
         ))}
       </div>
+      <RevealLinks/>
     </div>
   );
 };

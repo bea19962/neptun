@@ -1,0 +1,29 @@
+.silly-links {
+  background-color: aquamarine;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-content: flex-start;
+  font-size: 10px;
+  font-weight: 900;
+}
+
+.motion-a {
+ position: relative;
+ display: block;
+ overflow: hidden;
+ white-space: nowrap;
+ text-transform: uppercase;
+
+  text-decoration: none;
+  color: black;
+}
+
+.motion-div-second{
+ position: absolute;
+ inset: 0;
+}
+
+span{
+ display: inline-block;
+}
