@@ -1,17 +1,6 @@
 import "../styles/_fliplink.scss";
 import { motion } from "framer-motion";
 
-export const RevealLinks = () => {
-  return (
-    <section className="silly-links">
-      <FlipLink href="#">Twitter</FlipLink>
-      <FlipLink href="#">Linkedin</FlipLink>
-      <FlipLink href="#">Facebook</FlipLink>
-      <FlipLink href="#">Instagram</FlipLink>
-    </section>
-  );
-};
-
 const DURATION = 0.25;
 const STAGGER = 0.025;
 
@@ -70,3 +59,5 @@ const FlipLink = ({ children, href }) => {
     </motion.a>
   );
 };
+
+export default FlipLink;
