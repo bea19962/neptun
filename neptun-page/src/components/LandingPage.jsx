@@ -9,14 +9,14 @@ const LandingPage = () => {
   useEffect(() => {
     gsap.fromTo(
       ".text-left",
-      { x: "-100%" },
-      { x: "-20%", duration: 1, ease: "power4.out" }
+      { x: "-150%" },
+      { x: "0%", duration: 1, ease: "power4.out" }
     );
 
     gsap.fromTo(
       ".text-right",
-      { x: "100%" },
-      { x: "0%", duration: 1, ease: "power4.out" }
+      { x: "150%" },
+      { x: "0%", duration: 1, ease: "power4.out", delay: 0.1 }
     );
 
     gsap.fromTo(
@@ -49,9 +49,9 @@ const LandingPage = () => {
           <h3>Welcome to</h3>
           <h1>Neptun Interactive</h1>
         </div>
-        {/* <div className="text-right">
-          <h1>We are a creative studio based in Cologne</h1>
-        </div> */}
+        <div className="text-right">
+          <h3>an Indie-Media developer team based in Cologne Germany</h3>
+        </div> 
       </div>
         <button className="scroll-btn" onClick={scrollToNextSection}>
           Scroll Down
