@@ -7,34 +7,49 @@ gsap.registerPlugin(ScrollTrigger);
 
 const LandingPage = () => {
   useEffect(() => {
-    gsap
-      .timeline({
-        scrollTrigger: {
-          trigger: ".landing-page",
-          markers: {
-            startColor: "yellow",
-            endColor: "#42a6e0",
-            fontSize: "14px",
-          },
-          start: "top top",
-          end: "+=1", // Limits the scroll-triggered animation to 100px
-          pin: true,
-          scrub: 1,
-        },
-      })
-      .to(".content", {
-        "clip-path": "polygon(-100% 0%, 100% 0%, 100% 100%, -25% 100%)",
-        ease: "none",
-        stagger: 0.5,
-      });
+    gsap.fromTo(
+      ".text-left",
+      {
+        x: "-100%", // Start off-screen to the left
+      },
+      {
+        x: "0%", // End in the center
+        duration: 1,
+        ease: "power4.out",
+      }
+    );
+
+    gsap.fromTo(
+      ".text-right",
+      {
+        x: "100%", // Start off-screen to the right
+      },
+      {
+        x: "0%", // End in the center
+        duration: 1,
+        ease: "power4.out",
+      }
+    );
   }, []);
+
+  const scrollToNextSection = () => {
+    document.getElementById("next-section").scrollIntoView({ behavior: "smooth" });
+  };
+
   return (
-    <div className="landing-page">
+    <section className="landing-page">
       <div className="content">
-        <h1>Content Revealed Below</h1>
-        <p>Welcome to the hidden content.</p>
+        <div className="text-left">
+          <h1>Welcome to Neptun Interactive</h1>
+        </div>
+        <div className="text-right">
+          <p>We are a creative studio based in Cologne</p>
+        </div>
+        <button className="scroll-btn" onClick={scrollToNextSection}>
+          Scroll Down
+        </button>
       </div>
-    </div>
+    </section>
   );
 };
 

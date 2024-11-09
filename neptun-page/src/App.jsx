@@ -52,7 +52,7 @@ function App() {
 
   return (
     <div className="App">
-      <BaseBackground/>
+      <BaseBackground className="app-background"/>
       <Navbar activeSection={activeSection} onLinkClick={scrollToSection} />
       <section id="home" ref={sectionRefs.home}>
         <LandingPage />

@@ -12,6 +12,7 @@
 }
 
 .navbar {
+  width: 100%;
   background-color: transparent;
   // backdrop-filter: blur(10px);
   color: $text-color;
@@ -19,7 +20,7 @@
   justify-content: space-between;
   align-items: center;
   padding: $space-sm;
-  position: sticky;
+  position: fixed;
   top: 0;
   z-index: $z-index-navbar;
   border-bottom: 2px solid rgba(255, 255, 255, 0.1);

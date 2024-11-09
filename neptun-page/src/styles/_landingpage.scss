@@ -1,27 +1,57 @@
-/* Container and Mask Setup */
+/* _landingpage.scss */
 .landing-page {
-  width: 100%;
+  position: relative; /* Changed from absolute to relative */
+  top: 0; /* Ensures it starts at the top */
+  width: 100vw;
   height: 100vh;
+  color: white;
   display: flex;
   justify-content: center;
   align-items: center;
-  clip-path: circle(13.0% at 50% 50%);
-  //   background-image: url("https://wallpaperset.com/w/full/2/8/0/521071.jpg");
-  // background-size: cover;
-  background-color: black;
+  overflow: hidden;
+  z-index: 1;
 }
 
 .content {
+  text-align: center;
+  position: relative;
+  z-index: 1;
+}
+
+.text-left,
+.text-right {
   position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100vh;
-  clip-path: polygon(100% 0%, 100% 0%, 100% 100%, 150% 100%);
-  background: greenyellow;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.text-left {
+  left: -100%;
+}
+
+.text-right {
+  right: -100%;
+}
+
+h1 {
+  font-size: 3rem;
+}
+
+p {
+  font-size: 1.5rem;
+}
+
+.scroll-btn {
+  margin-top: 2rem;
+  padding: 10px 20px;
+  font-size: 1rem;
+  background-color: #42a6e0;
   color: white;
-  font-size: 24px;
-  display: grid;
-  place-items: center;
-  font-weight: 700;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.scroll-btn:hover {
+  background-color: #3188c0;
 }
