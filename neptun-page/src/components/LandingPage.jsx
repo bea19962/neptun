@@ -8,18 +8,6 @@ gsap.registerPlugin(ScrollTrigger);
 const LandingPage = () => {
   useEffect(() => {
     gsap.fromTo(
-      ".text-left",
-      { x: "-150%" },
-      { x: "0%", duration: 1, ease: "power4.out" }
-    );
-
-    gsap.fromTo(
-      ".text-right",
-      { x: "150%" },
-      { x: "0%", duration: 1, ease: "power4.out", delay: 0.1 }
-    );
-
-    gsap.fromTo(
       ".video-background",
       { clipPath: "circle(-200px at 50% 50%)" },
       {

@@ -44,6 +44,9 @@
   display: flex;
   flex-direction: column;
   text-align: left;
+  opacity: 0;          
+  transform: translateX(-150%); 
+  animation: slideInLeft 1s forwards 0.2s ease-in-out;  
 }
 
 .text-right {
@@ -54,6 +57,9 @@
   display: flex;
   flex-direction: column;
   text-align: right;
+  opacity: 0;          
+  transform: translateX(150%); 
+  animation: slideInRight 1s forwards 0.3s ease-in-out; 
 }
 
 .scroll-btn {
@@ -69,4 +75,19 @@
 
 .scroll-btn:hover {
   background-color: #3188c0;
+}
+
+
+@keyframes slideInLeft {
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideInRight {
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
 }
