@@ -2,6 +2,7 @@ import { useEffect } from "react";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import BaseButton from "./BaseButton";
+import FlipLink from "./FlipLink";
 import "../styles/_landingpage.scss";
 
 gsap.registerPlugin(ScrollTrigger);
@@ -15,15 +16,13 @@ const LandingPage = () => {
         clipPath: "circle(100% at 50% 50%)",
         duration: 3,
         ease: "power4.inOut",
-        scrollTrigger: { trigger: ".video-background", scrub: 1},
+        scrollTrigger: { trigger: ".video-background", scrub: 1 },
       }
     );
   }, []);
 
   const scrollToNextSection = () => {
-    document
-      .getElementById("next-section")
-      .scrollIntoView({ behavior: "smooth" });
+    document.getElementById("projects").scrollIntoView({ behavior: "smooth" });
   };
 
   return (
@@ -39,10 +38,12 @@ const LandingPage = () => {
           <h1>Neptun Interactive</h1>
         </div>
         <div className="text-right">
-          <h3>[ an Indie-Media developer team based in Cologne Germany ] </h3>
-        </div> 
+          <h3>an Indie-Media developer team based in Cologne Germany</h3>
+        </div>
       </div>
-      <BaseButton primary> a </BaseButton>
+      <BaseButton primary onClick={scrollToNextSection}>
+        <FlipLink className="flip-link">down</FlipLink>
+      </BaseButton>
     </section>
   );
 };
