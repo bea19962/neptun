@@ -1,4 +1,5 @@
-/* _landingpage.scss */
+@use "./_variables" as *;
+
 .landing-page {
   position: relative;
   width: 100vw;
@@ -15,7 +16,7 @@
   left: 0;
   width: 100%;
   height: 100%;
-  z-index: -1;
+  z-index: $z-index-background;
 
   video {
     object-fit: cover;
@@ -27,32 +28,33 @@
 
 .content {
   position: relative;
-  z-index: 1;
-  text-align: center;
+  z-index: $z-index-content;
+  // text-align: center;
+  top:-50px;
 }
 
-.text-left,
-.text-right {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
+.text-left{
+  width: 40%;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 2fr;
+  grid-row-gap: 9px;
 }
+// .text-left,
+// .text-right {
+//   position: absolute;
+//   top: 50%;
+//   transform: translateY(-50%);
+// }
 
-.text-left {
-  left: -100%;
-}
+// .text-left {
+//   left: -100%;
+// }
 
-.text-right {
-  right: -100%;
-}
+// .text-right {
+//   right: -100%;
+// }
 
-h1 {
-  font-size: 3rem;
-}
-
-p {
-  font-size: 1.5rem;
-}
 
 .scroll-btn {
   margin-top: 2rem;

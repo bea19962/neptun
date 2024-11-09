@@ -10,7 +10,7 @@ const LandingPage = () => {
     gsap.fromTo(
       ".text-left",
       { x: "-100%" },
-      { x: "0%", duration: 1, ease: "power4.out" }
+      { x: "-20%", duration: 1, ease: "power4.out" }
     );
 
     gsap.fromTo(
@@ -26,7 +26,7 @@ const LandingPage = () => {
         clipPath: "circle(100% at 50% 50%)",
         duration: 3,
         ease: "power4.inOut",
-        scrollTrigger: { trigger: ".video-background", scrub: 1 },
+        scrollTrigger: { trigger: ".video-background", scrub: 1},
       }
     );
   }, []);
@@ -46,15 +46,16 @@ const LandingPage = () => {
       </div>
       <div className="content">
         <div className="text-left">
-          <h1>Welcome to Neptun Interactive</h1>
+          <h3>Welcome to</h3>
+          <h1>Neptun Interactive</h1>
         </div>
-        <div className="text-right">
-          <p>We are a creative studio based in Cologne</p>
-        </div>
+        {/* <div className="text-right">
+          <h1>We are a creative studio based in Cologne</h1>
+        </div> */}
+      </div>
         <button className="scroll-btn" onClick={scrollToNextSection}>
           Scroll Down
         </button>
-      </div>
     </section>
   );
 };

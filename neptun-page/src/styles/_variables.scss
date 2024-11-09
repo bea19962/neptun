@@ -15,14 +15,14 @@ $heading-color: #fff;
 $border-color: #FDDF19;
 
 // Fonts
-$primary-font: 'Helvetica Neue', sans-serif;
+$primary-font: 'Helvetica', sans-serif;
 $heading-font: 'Helvetica Neue', sans-serif;
 
 $font-size-base: 1rem;         // Equivalent to 16px
 $font-size-headings: 3rem;     // Equivalent to 48px
 $font-size-s: 0.875rem;        // Equivalent to 14px
 $font-size-m: 1.5rem;          // Equivalent to 24px (renamed the second $font-size-s)
-$font-size-XXL: 6rem;          // Equivalent to 48px
+$font-size-XXL: 7rem;          // Equivalent to 48px
 
 // Font Weights
 $font-weight-light: 300;     // Light text
@@ -31,12 +31,13 @@ $font-weight-bold: 700;      // Bold text
 $font-weight-extra-bold: 800; // Extra bold text
 
 // Line Heights
-$line-height-tight: 1.2;      // Good for headings or compact text
+$line-height-tight: 0.8;      // Good for headings or compact text
 $line-height-normal: 1.5;     // Standard for body text
 $line-height-relaxed: 1.8;    // For larger body text or spacious designs
 $line-height-loose: 2.0;      // Great for larger sections of text for better readability
 
 // Letter Spacing
+$letter-spacing-xxs: 0.1px;
 $letter-spacing-xs: 0.5px;
 $letter-spacing-sm: 1px;
 $letter-spacing-md: 2px;    // Default for body text
