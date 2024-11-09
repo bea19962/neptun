@@ -11,7 +11,9 @@ const Navbar = ({ activeSection, onLinkClick }) => {
 
   return (
     <nav className="navbar">
-      <div className="navbar-brand">Neptun Interactive Logo</div>
+      <div className="navbar-brand">
+      <img src="../src/assets/small-logo.JPG" alt="Girl in a jacket" height="50" width="55"/>
+      </div>
       <div
         className={`hamburger ${isMenuOpen ? "open" : ""}`}
         onClick={toggleMenu}
