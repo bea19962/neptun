@@ -22,9 +22,10 @@ const TeamSection = () => {
         stagger: 0.1,
         scrollTrigger: {
           trigger: ".team-section",
-          start: "top 100%",
+          start: "top 50%",
           end: "top 0%",
           toggleActions: "play reverse play reverse",
+          markers: true,
         },
       }
     );

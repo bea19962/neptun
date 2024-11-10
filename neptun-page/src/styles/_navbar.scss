@@ -23,7 +23,7 @@
   position: fixed;
   top: 0;
   z-index: $z-index-navbar;
-  border-bottom: 2px solid rgba(255, 255, 255, 0.1);
+  // border-bottom: 2px solid rgba(255, 255, 255, 0.1);
   opacity: 0; /* Start hidden */
   animation: slideDown 0.5s ease-out forwards;
   transform: translateY(-100%);

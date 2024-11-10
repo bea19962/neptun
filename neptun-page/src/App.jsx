@@ -6,7 +6,7 @@ import ProjectShowcase from "./components/ProjectShowcase";
 import AboutTeam from "./components/TeamSection";
 import ContactForm from "./components/ContactForm";
 import Footer from "./components/Footer";
-import BaseBackground from "./components/BaseBackground";
+// import Cursor  from "./components/CustomCursor";
 
 function App() {
   const sections = ["home", "projects", "team", "contact"];
@@ -52,6 +52,7 @@ function App() {
 
   return (
     <div className="App">
+      {/* <Cursor/> */}
       {/* <BaseBackground className="app-background"/> */}
       <Navbar activeSection={activeSection} onLinkClick={scrollToSection} />
       <section id="home" ref={sectionRefs.home}>
