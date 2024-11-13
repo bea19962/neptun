@@ -2,21 +2,11 @@
  {
    "id": 1,
    "title": "Kiosk Simulator",
-   "description": "Manage a traditional kiosk in the city metropolis of Cologne, Germany...",
+   "description": "Kiosk Simulator lets you manage a traditional kiosk in the city metropolis of Cologne, Germany. Manage and upgrade your store and forge your own empire of sinister products one needs after a long night out.",
    "media": {
      "logo": { "src": "/images/logo1.png", "depth": 1 },
-     "background": { "src": "/images/background1.jpg", "depth": 0.5 },
-     "front": { "src": "/images/front1.jpg", "depth": 0.25 }
+     "background": { "src": "../src/assets/17c89690b77accea1937fc2370633ebc.jpg", "depth": 0.5 },
+     "front": { "src": "../src/assets/CuhBG.png", "depth": 0.25 }
    }
- },
- {
-   "id": 2,
-   "title": "Breaking Barriers",
-   "description": "Transform Cologne into an inclusive city...",
-   "media": {
-     "logo": { "src": "/images/logo2.png", "depth": 1 },
-     "background": { "src": "/images/background2.jpg", "depth": 0.5 },
-     "front": { "src": "/images/front2.jpg", "depth": 0.25 }
-   }
- }
+  }
 ]

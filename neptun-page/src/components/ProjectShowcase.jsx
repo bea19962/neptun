@@ -5,7 +5,7 @@ import "../styles/_projectsection.scss";
 const ProjectShowcase = () => {
   return (
     <section id="projects" className="projects">
-      <h2>Our Portfolio</h2>
+      <h2> </h2>
       <div className="project-cards">
         {projects.map((project) => (
           <ProjectCard

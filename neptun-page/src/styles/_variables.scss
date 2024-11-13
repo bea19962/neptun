@@ -66,5 +66,7 @@ $border-radius: 8px;              // General border-radius for rounded elements
 $z-index-background: -1; 
 $z-index-default: 0;
 $z-index-content: 1;  
+$z-index-parallax: 2; 
+$z-index-logo: 10; 
 $z-index-navbar: 1000;             // Navbar Z-index for positioning
 $z-index-modal: 2000;              // Modal Z-index for popups, etc.
